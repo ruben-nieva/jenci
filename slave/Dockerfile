@@ -1,5 +1,5 @@
 # The FROM will be replaced when building in OpenShift
-FROM centos:centos7
+FROM centos:centos
 
 MAINTAINER Ruben Nieva <ruben.nieva@gmail.com>
 
