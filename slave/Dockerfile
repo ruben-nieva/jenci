@@ -1,12 +1,11 @@
 # The FROM will be replaced when building in OpenShift
-FROM rhel7/rhel
+FROM rhel7:7.2
 
 MAINTAINER Siamak Sadeghianfar <ssadeghi@redhat.com>
 
 # Install headless Java
 USER root
 RUN subscription-manager register --username reman68 --password remain74 --auto-attach
-RUN yum repolist all
 RUN yum clean all && \
     yum-config-manager --disable rhel* 1>/dev/null && \
     yum-config-manager --enable rhel-7-server-rpms && \
