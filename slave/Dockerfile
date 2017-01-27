@@ -5,7 +5,7 @@ MAINTAINER Ruben Nieva <ruben.nieva@gmail.com>
 
 # Install headless Java
 USER root
-RUN yum install epel-release
+RUN yum install epel-release -y
 RUN yum clean all && \
     export INSTALL_PKGS="nss_wrapper java-1.8.0-openjdk-headless \
         java-1.8.0-openjdk-devel nss_wrapper gettext tar git" && \
