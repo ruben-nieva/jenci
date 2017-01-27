@@ -120,6 +120,8 @@ objects:
     selector:
       app: jenkins
       deploymentconfig: jenkins
+      matchLabels:
+        name: jenkins
     strategy:
       type: Recreate
     template:
